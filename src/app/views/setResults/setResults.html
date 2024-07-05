@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Result</title>
+    <link rel="stylesheet" href="views/setResults/css/setResults.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Set bet result</h3>
+        <p>Current epoch: <span id="bet-for"></span></p>
+        <div class="section">
+            <label for="epoch-integers">Epoch in integers</label>
+            <input type="text" id="epoch-integers" placeholder="Enter epoch in integers">
+        </div>
+        <div class="section">
+            <label for="result">Result</label>
+            <select id="result">
+                <option value="0">Pending</option>
+                <option value="1">Equal or greater</option>
+                <option value="2">Smaller</option>
+            </select>
+        </div>
+        <div class="section">
+            <button id="set-result-btn">Set result</button>
+        </div>
+    </div>
+    <script type="module" src="views/setResults/js/setResults.js"></script>
+</body>
+
+</html>

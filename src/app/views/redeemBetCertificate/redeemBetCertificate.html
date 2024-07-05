@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Bet Certificate</title>
+    <link rel="stylesheet" href="views/redeemBetCertificate/css/redeemBetCertificate.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <h3>Redeem a winning bet certificate</h3>
+            <label for="winning-bet-cert-id">Bet certificate ID</label>
+            <input type="text" id="winning-bet-cert-id" placeholder="Enter Bet certificate ID">
+            <button id="redeem-winning-bet-cert-btn">Redeem winning bet certificate</button>
+        </div>
+
+        <h3>Redeem a losing bet certificate</h3>
+        <div class="section">
+            <label for="losing-bet-cert-id">Bet certificate ID</label>
+            <input type="text" id="losing-bet-cert-id" placeholder="Enter Bet certificate ID">
+        </div>
+        <div class="section">
+            <label for="wildcard-type">Wildcard type</label>
+            <select id="wildcard-type">
+                <option value="0">Day before</option>
+                <option value="1">Double spending</option>
+            </select>
+            <button id="redeem-losing-bet-cert-btn">Redeem losing bet certificate</button>
+        </div>
+    </div>
+    <script type="module" src="views/redeemBetCertificate/js/redeemBetCertificate.js"></script>
+</body>
+
+</html>

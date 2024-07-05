@@ -1,0 +1,3 @@
+SEPOLIA_ACCESSPOINT_URL = https://sepolia.infura.io/v3/<Your-Api-Key-In-Infuria>
+SEPOLIA_ACCOUNT = <Your-Account-Address-In-Metamask>
+SEPOLIA_PRIVATE_KEY = <Your-Private-Key-In-Metamask>
