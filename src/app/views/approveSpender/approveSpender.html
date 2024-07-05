@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approve Spender</title>
+    <link rel="stylesheet" href="views/approveSpender/css/approveSpender.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Approve spender</h3>
+        <div class="section">
+            <label for="spender">Spender:</label>
+            <input type="text" id="spender" placeholder="Enter spender address">
+        </div>
+        <div class="section">
+            <label for="value">Value:</label>
+            <input type="text" id="value" placeholder="Enter value">
+        </div>
+        <div class="section">
+            <button id="approve-btn">Approve spender</button>
+        </div>
+        <div class="events">
+            <h2>Events</h2>
+            <textarea id="events-log" rows="10" readonly></textarea>
+        </div>
+        <div class="section">
+            <button id="get-events-btn">Get events</button>
+        </div>
+    </div>
+    <script type="module" src="views/approveSpender/js/approveSpender.js"></script>
+</body>
+
+</html>

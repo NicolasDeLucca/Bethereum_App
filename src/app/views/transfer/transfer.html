@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Galeons</title>
+    <link rel="stylesheet" href="views/transfer/css/transfer.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Make a transfer from my account:</h3>
+        <div class="section">
+            <label for="my-galeons-amount">Galeons amount</label>
+            <input type="text" id="my-galeons-amount" placeholder="Enter Galeons amount">
+        </div>
+        <div class="section">
+            <label for="my-to-account">To:</label>
+            <input type="text" id="my-to-account" placeholder="Enter recipient account">
+        </div>
+        <div class="section">
+            <button id="my-transfer-btn">Transfer</button>
+        </div>
+
+        <h3>Make a transfer from another account:</h3>
+        <div class="section">
+            <label for="other-from-account">From:</label>
+            <input type="text" id="other-from-account" placeholder="Enter source account">
+        </div>
+        <div class="section">
+            <label for="other-galeons-amount">Galeons amount</label>
+            <input type="text" id="other-galeons-amount" placeholder="Enter Galeons amount">
+        </div>
+        <div class="section">
+            <label for="other-to-account">To:</label>
+            <input type="text" id="other-to-account" placeholder="Enter recipient account">
+        </div>
+        <div class="section">
+            <button id="other-transfer-btn">Transfer</button>
+        </div>
+        <div class="events">
+            <h2>Events</h2>
+            <textarea id="events-log" rows="10" readonly></textarea>
+        </div>
+        <div class="section">
+            <button id="get-events-btn">Get events</button>
+        </div>
+    </div>
+    <script type="module" src="views/transfer/js/transfer.js"></script>
+</body>
+
+</html>

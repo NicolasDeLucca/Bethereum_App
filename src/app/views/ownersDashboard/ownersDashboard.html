@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Management</title>
+    <link rel="stylesheet" href="/views/ownersDashboard/css/ownersDashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Owners dashboard</h3>
+        <div class="section">
+            <label>Owners count: <span id="owners-count"></span></label>
+
+        </div>
+        <div class="section">
+            <label for="address-input">Enter an address</label>
+            <input type="text" id="address-input" placeholder="Enter an address">
+            <div class="buttons">
+                <button id="search-owner-btn">Search owner</button>
+                <button id="add-owner-btn">Add owner</button>
+                <button id="remove-owner-btn">Remove owner</button>
+            </div>
+        </div>
+        <div class="section">
+            <p><label>Is owner: </label><span id="is-owner"></span></p>
+            <p><label>Owner index: </label><span id="owner-index"></span></p>
+            <p><label>Galeons to claim: </label><span id="galeons-claim"></span></p>
+            <p><label>Ethers to claim: </label><span id="ethers-claim"></span></p>
+        </div>
+    </div>
+    <script type="module" src="/views/ownersDashboard/js/ownersDashboard.js"></script>
+</body>
+
+</html>

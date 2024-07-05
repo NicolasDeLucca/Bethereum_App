@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owners settings</title>
+    <link rel="stylesheet" href="/views/ownersSettings/css/ownersSettings.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Owners settings</h3>
+        <div class="input-row">
+            <label for="galeon-mint-price">Galeon mint price</label>
+            <input type="number" id="galeon-mint-price" placeholder="Enter Galeon mint price">
+            <button id="galeon-mint-price-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label for="withdraw-fee">Withdraw fee</label>
+            <input type="text" id="withdraw-fee" placeholder="Enter Withdraw fee">
+            <button id="withdraw-fee-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label for="wildcard-mint-price">Wildcard mint price</label>
+            <label for="wildcard-type">Wildcard type</label>
+            <select id="wildcard-type">
+                <option value="0">Day before</option>
+                <option value="1">Double spending</option>
+            </select>
+            <label for="wildcard-mint-price">Mint price</label>
+            <input type="text" id="wildcard-mint-price" placeholder="Enter Wildcard mint price">
+            <button id="wildcard-mint-price-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label for="commission-fee">Commission fee</label>
+            <input type="text" id="commission-fee" placeholder="Enter Commission fee">
+            <button id="commission-fee-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label for="minimum-bet-amount">Minimum bet amount</label>
+            <input type="text" id="minimum-bet-amount" placeholder="Enter Minimum bet amount">
+            <button id="minimum-bet-amount-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label for="galeon-contract-address-owners">Owners contract - Set galeon contract</label>
+            <input type="text" id="galeon-contract-address-owners" placeholder="Enter Galeon contract address">
+            <button id="galeon-contract-address-owners-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label for="betting-contract-address-owners">Owners contract - Set Betting contract</label>
+            <input type="text" id="betting-contract-address-owners" placeholder="Enter Betting contract address">
+            <button id="betting-contract-address-owners-btn">Submit</button>
+        </div>
+        <div class="input-row">
+            <label>Betting contract - Set token contracts</label>
+            <label for="betting-contract-set-token-contracts-galeon">Galeon contract address</label>
+            <input type="text" id="betting-contract-set-token-contracts-galeon"
+                placeholder="Enter Galeon contract address">
+            <label for="betting-contract-set-token-contracts-bet-certificate">Bet certificate contract address</label>
+            <input type="text" id="betting-contract-set-token-contracts-bet-certificate"
+                placeholder="Enter Bet certificate contract address">
+            <label for="betting-contract-set-token-contracts-wildcard">Wildcard contract address</label>
+            <input type="text" id="betting-contract-set-token-contracts-wildcard"
+                placeholder="Enter Wildcard contract address">
+            <button id="betting-contract-set-token-contracts-btn">Submit</button>
+        </div>
+    </div>
+    <script type="module" src="/views/ownersSettings/js/ownersSettings.js"></script>
+</body>
+
+</html>

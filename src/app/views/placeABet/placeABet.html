@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place a bet</title>
+    <link rel="stylesheet" href="views/placeABet/css/placeABet.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Place a bet</h3>
+        <div class="section">
+            <p>Minimum bet amount: <span id="min-bet-amount">0</span></p>
+            <p>Commission fee: <span id="commission-fee">0</span></p>
+            <p>Bet for: <span id="bet-for">0</span></p>
+        </div>
+        <div class="section">
+            <label for="galeon-amount">Galeon amount</label>
+            <input type="text" id="galeon-amount" placeholder="Enter Galeon amount">
+        </div>
+        <div class="section">
+            <label for="bet-option">Select the result</label>
+            <select id="bet-option">
+                <option value="0">Pending</option>
+                <option value="1">Equal or greater</option>
+                <option value="2">Smaller</option>
+            </select>
+        </div>
+        <div class="section">
+            <label for="wildcard-id">Wildcard ID</label>
+            <input type="text" id="wildcard-id" placeholder="Enter Wildcard ID">
+        </div>
+        <div class="section">
+            <button id="bet-btn">Bet</button>
+            <button id="bet-wildcard-btn">Bet with wildcard</button>
+        </div>
+        <div class="events">
+            <h2>Events</h2>
+            <textarea id="events-log" rows="10" readonly></textarea>
+        </div>
+        <div class="section">
+            <button id="get-events-btn">Get events</button>
+        </div>
+    </div>
+    <script type="module" src="views/placeABet/js/placeABet.js"></script>
+</body>
+
+</html>
